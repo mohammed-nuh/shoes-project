@@ -1,0 +1,3 @@
+- [x] Update products array in Banner.jsx to include only banner1.png, banner2.png, banner3.png
+- [x] Remove banner_text div from the JSX in Banner.jsx
+- [x] Remove unused imports (MoveLeft, MoveRight) and fix alt attribute
