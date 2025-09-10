@@ -6,6 +6,7 @@ import Product from "../../Components/Product/Product";
 import Recent from "../../Components/Recent/Recent";
 import Delivery from './../../Components/Delivery/Delivery';
 import Features from './../../Components/Features/Features';
+import ShoesList from "../../Components/ShoesList/ShoesList";
 
 const Home = () => {
     return (
@@ -20,14 +21,17 @@ const Home = () => {
                 <Brand />
             </div>
 
-            {/* features component */}
+            {/* features component
             <div className="w-full flex items-center justify-center mb-[80px]">
                 <Features />
-            </div>
+            </div> */}
 
-            {/* categories component */}
+            {/* categories component
             <div className="w-full flex items-center justify-center mb-[80px]">
                 <Categories />
+            </div> */}
+            <div>
+                <ShoesList/>
             </div>
 
             {/* product component  */}
