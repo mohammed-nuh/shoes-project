@@ -1,51 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const ShoesList = () => {
-  // Dummy shoe data
-  const shoesData = [
-    {
-      id: 1,
-      product: "Joker 1 GT SE 'NYC'",
-      productImage:
-        "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/44f222ab-96b6-43b9-82e7-9a1bd888611d/NIKE+COURT+VISION+LO.png",
-      hover_image:
-        "https://images-cdn.ubuy.co.in/633b4d0ec453a05ef838979c-damyuan-running-shoes-men-fashion.jpg",
-      oldPrice: 189.0,
-      newPrice: 169.0,
-    },
-    {
-      id: 2,
-      product: "Joker 1 GT SE 'MIRO'",
-      productImage:
-        "https://www.google.com/imgres?q=joker%201%20gt%20se%20miro&imgurl=https%3A%2F%2F361sport.com%2Fcdn%2Fshop%2Ffiles%2FJOKER1GTPEMIRO_1_grande.jpg%3Fv%3D1744613943&imgrefurl=https%3A%2F%2F361sport.com%2Fen-es%2Fproducts%2Fjoker-1-gt-se-miro&docid=Tn5ytba2w7JIzM&tbnid=rrCJAh6qSoRynM&vet=12ahUKEwiYhbC45s2PAxWMsVYBHcGvNdoQM3oECBkQAA..i&w=600&h=600&hcb=2&ved=2ahUKEwiYhbC45s2PAxWMsVYBHcGvNdoQM3oECBkQAA",
-      hover_image:
-        "https://assets.adidas.com/images/w_600,f_auto,q_auto/3f2e0192ad8d4c0c82deada800c4f323_9366/Ultraboost_22_Shoes_White_GX3065_01_standard.jpg",
-      oldPrice: 189.0,
-      newPrice: 169.0,
-    },
-    {
-      id: 3,
-      product: "Joker 1 GT 'Denver'",
-      productImage:
-        "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/369666/03/sv01/fnd/IND/fmt/png",
-      hover_image:
-        "https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/369666/01/sv01/fnd/IND/fmt/png",
-      oldPrice: 189.0,
-      newPrice: 169.0,
-    },
-    {
-      id: 4,
-      product: "Joker 1 GT PE 'CQT'",
-      productImage:
-        "https://www.converse.in/media/catalog/product/1/0/10016263-A01-001-1600.png",
-      hover_image:
-        "https://www.converse.in/media/catalog/product/1/0/10016263-A01-002-1600.png",
-      oldPrice: 189.0,
-      newPrice: 169.0,
-    },
-  ];
-
+  const [shoesData, setShoesData] = useState([]);
   const [visibleCount, setVisibleCount] = useState(2);
+
+  // Fetch shoes data from API on component mount
+  useEffect(() => {
+    const fetchShoesData = async () => {
+      try {
+        const response = await fetch('https://6835b8aecd78db2058c2d6cc.mockapi.io/shoes');
+        const data = await response.json();
+        setShoesData(data);
+      } catch (error) {
+        console.error('Error fetching shoes data:', error);
+      }
+    };
+
+    fetchShoesData();
+  }, []);
 
   const handleShowMore = () => {
     setVisibleCount((prev) =>
@@ -55,6 +27,7 @@ const ShoesList = () => {
 
   return (
     <div className="p-8">
+      <h2 className="text-3xl font-bold text-center mb-4">Shoes</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {shoesData.slice(0, visibleCount).map((shoe) => (
           <div
@@ -83,10 +56,10 @@ const ShoesList = () => {
               <h3 className="text-lg font-semibold">{shoe.product}</h3>
               <div className="mt-1">
                 <span className="text-gray-300 line-through mr-2 text-sm">
-                  ${shoe.oldPrice.toFixed(2)} USD
+                  ${shoe.totalAmount.toFixed(2)} USD
                 </span>
                 <span className="text-red-400 font-bold text-lg">
-                  ${shoe.newPrice.toFixed(2)} USD
+                  ${shoe.discountedAmount.toFixed(2)} USD
                 </span>
               </div>
             </div>

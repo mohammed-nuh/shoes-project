@@ -5,10 +5,6 @@ import { Link } from "react-router";
 const Footer = () => {
     return (
         <footer>
-
-
-
-
             <div className="footer_top mx-h-[343px] w-full border-t border-b border-[#e1e3e5] pt-[80px] pb-[60px]">
                 <div className="lg:container mx-auto">
 
@@ -16,10 +12,15 @@ const Footer = () => {
 
                         <div>
                             {/* logo wrapper  */}
-                            <div className="logo_wrapper mb-7">
-                                <Link to='/' className="text-3xl text-black font-inter font-medium capitalize flex items-center gap-2"><Armchair size='2rem' color="#029fae" /> comforty</Link>
+                            <div className="flex items-center">
+                                <Link to="/">
+                                    <img
+                                        src="/361_black_png.png"
+                                        alt="361 Logo"
+                                        className="h-15 w-auto"
+                                    />
+                                </Link>
                             </div>
-
                             <p className="text-base text-[#272343] font-inter font-normal mb-4 max-w-[350px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat vero nulla! Quibusdam, reiciendis maiores fugiat atque aliquam molestiae vero?</p>
 
                             <div className="footer_social flex items-center gap-3">
@@ -39,12 +40,12 @@ const Footer = () => {
                         <div className="footer_wrapper">
                             <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">category</h3>
                             <ul className="space-y-2 mt-4">
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">sofa</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">armchair</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">wing chair</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">desk chair</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">wooden chair</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">park bench</Link></li>
+                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Sport Shoes</Link></li>
+                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Foot ball Shoes</Link></li>
+                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Basket ball Shoes</Link></li>
+                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Running Shoes</Link></li>
+                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">General Shoes</Link></li>
+                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Laceless Shoes</Link></li>
                             </ul>
                         </div>
 
@@ -66,9 +67,6 @@ const Footer = () => {
                             </form>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
 
@@ -77,7 +75,7 @@ const Footer = () => {
                 <div className="lg:container mx-auto">
                     <div className="flex items-center justify-between">
                         <div>
-                           <p className="text-base text-[#9a9caa] font-normal font-inter">@ 2025 Blogy- Designed & Develop <span className="text-[#272343]">Lifeonthecode</span></p> 
+                            <p className="text-base text-[#9a9caa] font-normal font-inter">@ 2025 Blogy- Designed & Develop <span className="text-[#272343]">Lifeonthecode</span></p>
                         </div>
                         <div className="flex items-center gap-3.5">
                             <p className="flex items-center gap-2 text-[#9a9caa] text-xl">Bank Note <Banknote size='2rem' /></p>

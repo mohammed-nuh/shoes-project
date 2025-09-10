@@ -9,7 +9,7 @@ import AuthCheck from "../AuthCheck/AuthCheck";
 import Footer from "../Components/Footer/Footer";
 import Page361 from "../Pages/Page361";
 import NewTrend from "../Pages/NewTrend";
-import Basketball from "../Pages/Basketball";
+import BasketballPage from "../Pages/BasketballPage";
 import Running from "../Pages/Running";
 import Sports from "../Pages/Sports";
 import Lifestyle from "../Pages/Lifestyle";
@@ -43,7 +43,7 @@ const MainLayout = () => {
                 {/* new pages routes */}
                 <Route path="361" element={<Page361 />} />
                 <Route path="new-trend" element={<NewTrend />} />
-                <Route path="basketball" element={<Basketball />} />
+                <Route path="basketball" element={<BasketballPage />} />
                 <Route path="running" element={<Running />} />
                 <Route path="sports" element={<Sports />} />
                 <Route path="lifestyle" element={<Lifestyle />} />

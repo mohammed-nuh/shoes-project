@@ -1,52 +1,24 @@
-import Banner from "../../Components/Banner/Banner";
-import Brand from "../../Components/Brand/Brand";
-import Categories from "../../Components/Categories/Categories";
-import Client from "../../Components/Client/Client";
-import Product from "../../Components/Product/Product";
-import Recent from "../../Components/Recent/Recent";
-import Delivery from './../../Components/Delivery/Delivery';
-import Features from './../../Components/Features/Features';
+import HeroBanner from "../../Components/Banner/hero_banner/HeroBanner";
+import CategoryBanner from "../../Components/Banner/category_banner/CategoryBanner";
 import ShoesList from "../../Components/ShoesList/ShoesList";
 
 const Home = () => {
     return (
         <div>
-            {/* banner component  */}
-            <div className="w-full min-h-[850px] bg-[#f0f2f3] rounded-b-3xl">
-                <Banner />
+            {/* Hero Banner component  */}
+            <div className="w-full aspect-[851/315]">
+                <HeroBanner />
             </div>
 
-            {/* brand component  */}
-            <div className="brand flex items-center h-[171px] justify-center w-full mt-8 mb-8">
-                <Brand />
+
+            {/* Category Banner component  */}
+            <div className="w-full">
+                <CategoryBanner />
             </div>
 
-            {/* features component
-            <div className="w-full flex items-center justify-center mb-[80px]">
-                <Features />
-            </div> */}
-
-            {/* categories component
-            <div className="w-full flex items-center justify-center mb-[80px]">
-                <Categories />
-            </div> */}
+            {/* Shoe List component  */}
             <div>
-                <ShoesList/>
-            </div>
-
-            {/* product component  */}
-            <div className="w-full flex items-center justify-center pb-[80px]">
-                <Product />
-            </div>
-
-            {/* client say component  */}
-            <div className="w-full flex items-center justify-center bg-[#f0f2f3] min-h-[589px] pb-[80px] pt-[80px]">
-                <Client />
-            </div>
-
-            {/* Recent component  */}
-            <div className="w-full flex items-center justify-center pb-[80px] pt-[80px]">
-                <Recent />
+                <ShoesList />
             </div>
         </div>
     );
