@@ -19,11 +19,13 @@ const Navbar = () => {
 
                 {/* Navigation Links */}
                 <nav className="hidden md:flex items-center gap-8">
-                    <NavLink to='/' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Home</NavLink>
-                    <NavLink to='/shop' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Shop</NavLink>
-                    <NavLink to='/product' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Product</NavLink>
-                    <NavLink to='/pages' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Pages</NavLink>
-                    <NavLink to='/about' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>About</NavLink>
+                    <NavLink to='/361' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>361°</NavLink>
+                    <NavLink to='/new-trend' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>New&Trend</NavLink>
+                    <NavLink to='/basketball' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Basketball</NavLink>
+                    <NavLink to='/running' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Running</NavLink>
+                    <NavLink to='/sports' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Sports</NavLink>
+                    <NavLink to='/lifestyle' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>Lifestyle</NavLink>
+                    <NavLink to='/about-athlete' className='text-sm text-gray-700 font-inter font-medium capitalize hover:text-teal-600'>About Athlete</NavLink>
                 </nav>
 
                 {/* Right Side Icons and Search */}

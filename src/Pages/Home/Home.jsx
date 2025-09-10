@@ -15,11 +15,6 @@ const Home = () => {
                 <Banner />
             </div>
 
-            {/* delivery component */}
-            <div className="delivery_component w-full min-h-[150px]">
-                <Delivery />
-            </div>
-
             {/* brand component  */}
             <div className="brand flex items-center h-[171px] justify-center w-full mt-8 mb-8">
                 <Brand />
