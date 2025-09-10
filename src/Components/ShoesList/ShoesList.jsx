@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const ShoesList = () => {
   const [shoesData, setShoesData] = useState([]);
-  const [visibleCount, setVisibleCount] = useState(2);
+  const [visibleCount, setVisibleCount] = useState(4);
 
   // Fetch shoes data from API on component mount
   useEffect(() => {

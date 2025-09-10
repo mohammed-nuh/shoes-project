@@ -1,93 +1,112 @@
-import { Armchair, Banknote, CreditCard, Facebook, Instagram, Twitter, Youtube } from "lucide-react";
-import { Link } from "react-router";
-
+// Footer.jsx
+import React from "react";
+import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
-    return (
-        <footer>
-            <div className="footer_top mx-h-[343px] w-full border-t border-b border-[#e1e3e5] pt-[80px] pb-[60px]">
-                <div className="lg:container mx-auto">
+  return (
+    <footer className="bg-black text-white mt-10">
+      {/* Top Section */}
+      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
+        
+        {/* Contact */}
+        <div>
+          <h3 className="font-bold mb-4">CONTACT</h3>
+          <p className="text-sm leading-6">
+            Rm.1801, Easey Comm. BLDG, 253-261 Hennessy Road, Wanchai, HK 999077
+          </p>
+          <p className="mt-3 text-sm">support@361sport.com</p>
 
-                    <div className="grid grid-cols-4">
+          <div className="flex gap-4 mt-4 text-xl">
+            <FaFacebookF className="hover:text-gray-400 cursor-pointer" />
+            <FaTwitter className="hover:text-gray-400 cursor-pointer" />
+            <FaInstagram className="hover:text-gray-400 cursor-pointer" />
+            <FaYoutube className="hover:text-gray-400 cursor-pointer" />
+            <FaTiktok className="hover:text-gray-400 cursor-pointer" />
+          </div>
+        </div>
 
-                        <div>
-                            {/* logo wrapper  */}
-                            <div className="flex items-center">
-                                <Link to="/">
-                                    <img
-                                        src="/361_black_png.png"
-                                        alt="361 Logo"
-                                        className="h-15 w-auto"
-                                    />
-                                </Link>
-                            </div>
-                            <p className="text-base text-[#272343] font-inter font-normal mb-4 max-w-[350px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus repellat vero nulla! Quibusdam, reiciendis maiores fugiat atque aliquam molestiae vero?</p>
+        {/* Basketball Shoes */}
+        <div>
+          <h3 className="font-bold mb-4">BASKETBALL SHOES</h3>
+          <ul className="space-y-2 text-sm">
+            <li>Joker Series</li>
+            <li>BIG3 Series</li>
+            <li>Biospeed Series</li>
+            <li>AG Series</li>
+            <li>ZEN Series</li>
+            <li>DVD Series</li>
+          </ul>
+        </div>
 
-                            <div className="footer_social flex items-center gap-3">
-                                <Link className="p-3 rounded-full border-[#007580] inline-block border-[1px]"><Facebook size='1.5rem' color="#007580" /></Link>
+        {/* Running Shoes */}
+        <div>
+          <h3 className="font-bold mb-4">RUNNING SHOES</h3>
+          <ul className="space-y-2 text-sm">
+            <li>Flame Series</li>
+            <li>Furious Series</li>
+            <li>Biospeed Series</li>
+            <li>Miro Nude</li>
+            <li>Fierce Series</li>
+          </ul>
+        </div>
 
+        {/* Company */}
+        <div>
+          <h3 className="font-bold mb-4">361°</h3>
+          <ul className="space-y-2 text-sm">
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>361° Tech</li>
+            <li>Size Chart</li>
+            <li>Order Tracking</li>
+            <li>Affiliate</li>
+          </ul>
+        </div>
 
-                                <Link className="p-3 inline-block"><Twitter size='1.5rem' color="#007580" /></Link>
+        {/* Policy */}
+        <div>
+          <h3 className="font-bold mb-4">POLICY</h3>
+          <ul className="space-y-2 text-sm">
+            <li>Shipping Policy</li>
+            <li>Refund Policy</li>
+            <li>Privacy Policy</li>
+            <li>Terms of Service</li>
+          </ul>
+        </div>
 
+        {/* Newsletter */}
+        <div className="sm:col-span-2 md:col-span-3 lg:col-span-5">
+          <h3 className="font-bold mb-4">NEWSLETTER</h3>
+          <p className="text-sm mb-4">
+            Subscribe to our newsletter to get the latest news and discounts.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3">
+            <input
+              type="email"
+              placeholder="Your email"
+              className="px-4 py-2 w-full sm:w-auto flex-grow text-black rounded-md sm:rounded-l-md sm:rounded-r-none focus:outline-none"
+            />
+            <button className="bg-white text-black px-4 py-2 rounded-md sm:rounded-r-md sm:rounded-l-none hover:bg-gray-200">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
 
-                                <Link className="p-3 inline-block"><Instagram size='1.5rem' color="#007580" /></Link>
-
-
-                                <Link className="p-3 inline-block"><Youtube size='1.5rem' color="#007580" /></Link>
-                            </div>
-                        </div>
-
-                        <div className="footer_wrapper">
-                            <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">category</h3>
-                            <ul className="space-y-2 mt-4">
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Sport Shoes</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Foot ball Shoes</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Basket ball Shoes</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Running Shoes</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">General Shoes</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">Laceless Shoes</Link></li>
-                            </ul>
-                        </div>
-
-                        <div className="footer_wrapper">
-                            <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">support</h3>
-                            <ul className="space-y-2 mt-4">
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">help & support</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">tearms & condition</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">privacy policy</Link></li>
-                                <li><Link className="text-base text-[#272343] font-inter font-normal capitalize">help</Link></li>
-                            </ul>
-                        </div>
-
-                        <div className="newsletter">
-                            <h3 className="text-xl text-[#9a9caa] font-inter font-medium uppercase">newsletter</h3>
-                            <form action="#" className="max-w-[424px] w-full flex items-center gap-2">
-                                <input type="email" placeholder="Your Email.." className="max-w-[285px] w-full h-[46px] border-[#e1e3e5] border-[1px] rounded-lg pl-2" />
-                                <button type="submit" className="text-base text-white font-semibold capitalize w-[127px] h-[46px] bg-[#007580] rounded-lg cursor-pointer">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div className="footer_bottom w-full h-[75px] flex items-center justify-center ">
-                <div className="lg:container mx-auto">
-                    <div className="flex items-center justify-between">
-                        <div>
-                            <p className="text-base text-[#9a9caa] font-normal font-inter">@ 2025 Blogy- Designed & Develop <span className="text-[#272343]">Lifeonthecode</span></p>
-                        </div>
-                        <div className="flex items-center gap-3.5">
-                            <p className="flex items-center gap-2 text-[#9a9caa] text-xl">Bank Note <Banknote size='2rem' /></p>
-
-                            <p className="flex items-center gap-2 text-[#9a9caa] text-xl">Credit Card <CreditCard size='2rem' /></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer >
-    );
+      {/* Bottom Bar */}
+      <div className="bg-gray-900 text-gray-400 text-sm py-4 flex flex-col gap-3 md:flex-row justify-between items-center px-6">
+        <p className="text-center md:text-left">
+          Copyright © <span className="text-yellow-400">361 Degrees 2025</span>{" "}
+          all rights reserved.
+        </p>
+        <div className="flex gap-3 flex-wrap justify-center md:justify-end">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="visa" className="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="mastercard" className="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PayPal_2023_logo.svg" alt="paypal" className="h-6" />
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

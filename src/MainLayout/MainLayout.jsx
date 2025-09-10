@@ -20,6 +20,7 @@ import Category3 from "../Pages/Category3";
 import Category4 from "../Pages/Category4";
 import Category5 from "../Pages/Category5";
 import Category6 from "../Pages/Category6";
+import Cart from "../Pages/Cart";
 
 
 
@@ -48,6 +49,7 @@ const MainLayout = () => {
                 <Route path="sports" element={<Sports />} />
                 <Route path="lifestyle" element={<Lifestyle />} />
                 <Route path="about-athlete" element={<AboutAthlete />} />
+                <Route path="cart" element={<Cart />} />
 
                 {/* category routes */}
                 <Route path="categories/cat1" element={<Category1 />} />
