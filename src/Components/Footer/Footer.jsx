@@ -1,6 +1,5 @@
 // Footer.jsx
-import React from "react";
-import { FaFacebookF, FaInstagram, FaYoutube, FaTiktok, FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -21,7 +20,6 @@ const Footer = () => {
             <FaTwitter className="hover:text-gray-400 cursor-pointer" />
             <FaInstagram className="hover:text-gray-400 cursor-pointer" />
             <FaYoutube className="hover:text-gray-400 cursor-pointer" />
-            <FaTiktok className="hover:text-gray-400 cursor-pointer" />
           </div>
         </div>
 
@@ -102,7 +100,7 @@ const Footer = () => {
         <div className="flex gap-3 flex-wrap justify-center md:justify-end">
           <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="visa" className="h-6" />
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png" alt="mastercard" className="h-6" />
-          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/PayPal_2023_logo.svg" alt="paypal" className="h-6" />
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/2560px-PayPal.svg.png" alt="paypal" className="h-6" />
         </div>
       </div>
     </footer>
