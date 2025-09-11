@@ -6,12 +6,12 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const CategoryBanner = () => {
   const categoryBanners = [
-    { id: 1, image: "/src/assets/Top_Categrories/cat1.png", route: "/categories/cat1" },
-    { id: 2, image: "/src/assets/Top_Categrories/cat2.png", route: "/categories/cat2" },
-    { id: 3, image: "/src/assets/Top_Categrories/cat3.png", route: "/categories/cat3" },
-    { id: 4, image: "/src/assets/Top_Categrories/cat4.png", route: "/categories/cat4" },
-    { id: 5, image: "/src/assets/Top_Categrories/cat5.png", route: "/categories/cat5" },
-    { id: 6, image: "/src/assets/Top_Categrories/cat6.png", route: "/categories/cat6" },
+    { id: 1, image: "/cat1.png", route: "/categories/cat1" },
+    { id: 2, image: "/cat2.png", route: "/categories/cat2" },
+    { id: 3, image: "/cat3.png", route: "/categories/cat3" },
+    { id: 4, image: "/cat4.png", route: "/categories/cat4" },
+    { id: 5, image: "/cat5.png", route: "/categories/cat5" },
+    { id: 6, image: "/cat6.png", route: "/categories/cat6" },
   ];
 
   // custom arrows

@@ -4,9 +4,9 @@ import Slider from "react-slick";
 
 const HeroBanner = () => {
   const products = [
-    { id: 1, image: "/src/assets/Banner/banner1_long.png" },
-    { id: 2, image: "/src/assets/Banner/banner2_long.png" },
-    { id: 3, image: "/src/assets/Banner/banner3_long.png" },
+    { id: 1, image: "/banner1_long.png" },
+    { id: 2, image: "/banner2_long.png" },
+    { id: 3, image: "/banner3_long.png" },
   ];
 
   const settings = {
